@@ -15,8 +15,6 @@ steps:
   pull: default
   image: rancher/dapper:v0.5.8
   commands:
-  - wget http://updates-ext.suse.de/SUSE/Products/SLE-Module-Basesystem/15-SP3/s390x/product/s390x/file-5.32-7.11.2.s390x.rpm
-  - rpm -ivh file-5.32-7.11.2.s390x.rpm
   - dapper ci
   privileged: true
   volumes:
