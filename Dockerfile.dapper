@@ -41,9 +41,9 @@ RUN wget -O - https://storage.googleapis.com/golang/go1.14.15.linux-${!GOLANG_AR
 
 # Build liblonghorn
 RUN cd /usr/src && \
-    git clone https://github.com/rancher/liblonghorn.git && \
+    git clone https://github.com/keithalucas/liblonghorn.git  && \
     cd liblonghorn && \
-    git checkout 09956ed9329d51f41a85d6e06113948c947976a8 && \
+    git checkout littleendian && \
     make && \
     make install
 
